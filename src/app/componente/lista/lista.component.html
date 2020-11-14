@@ -1,0 +1,39 @@
+<div id = "tableContainer" >
+    <h1>List of <span>dragons</span></h1>
+    <div id="subtitle">
+        <h3>Name</h3>
+        <h3>Type</h3>
+        <h3>Creation</h3>
+    </div>
+    <!--Formatação das informações recebidas pela api-->
+   <div *ngFor= "let dragon of dragons">
+        <div class='table'>
+            <a href="javascript:void(0);" class="link display" (click)="modal($event, dragon)">
+                <div class="tableChild" >{{dragon.name}}</div>
+            </a>
+            <input type="text" class="tableChild hidden" [(ngModel)]="dragon.name" >
+            <div class="tableChild display" >{{dragon.type}}</div>
+            <input type="text" class="tableChild hidden" [(ngModel)]="dragon.type">
+            <div class="tableChild ">{{dragon.createdAt | date}}</div>
+            <button (click)="troca($event, index)" class="troca">Editar</button>
+            <button (click)="finished($event, dragon )"  class="hiddenButton">Fechar</button>
+        </div>
+   </div>
+   <div id="create">
+        <button (click) = "create()">Criar</button> 
+   </div> 
+   <!--Modal para informações do dragão-->
+   <div id="modalContainer" *ngIf="modalCondition">
+    <div id="modal" >
+        <h1>{{currentDragon.name}} <span>details</span></h1>
+        <div class="tableChild" >{{currentDragon.name}}</div>
+        <div class="tableChild display" >{{currentDragon.type}}</div>
+        <div class="tableChild ">{{currentDragon.createdAt | date}}</div>
+        <button (click)="delete(currentDragon.id)" id="delete">Delete</button>
+        <button (click)="closeModal()" id="end">close</button>
+    </div>
+        
+   </div>
+    
+
+</div>

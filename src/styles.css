@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,100;1,300&display=swap');
+
+
+body {
+    background: url(/assets/img/dragon.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+
+}

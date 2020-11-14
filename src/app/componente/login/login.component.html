@@ -1,0 +1,12 @@
+<div id='login'>
+    <div class="inputContent">
+        <label for="enter">LOGIN:</label>
+        <input type="email" [(ngModel)]="user">
+    </div>
+    <div class="inputContent">
+        <label for="password">SENHA:</label>
+        <input type="password"[(ngModel)]="pass">
+    </div>
+    <button (click)="login(user, pass)">Entrar</button>
+
+</div>

@@ -1,0 +1,59 @@
+/*Estilo da tela de criação*/
+#logup {
+    background-color: rgba(0, 0, 0, 0.788);
+    width: 40%;
+    margin-left: 30%;
+    height: auto;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5%;
+}
+.inputContent {
+    width: 100%;
+    padding-left: 20%;
+    margin-bottom: 20px;
+}
+.inputContent:nth-child(1){
+    margin-left: 10px;
+    margin-top: 20px;
+}
+label{
+    display: block;
+    color: white;
+    font-weight: 400;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    letter-spacing: 3px;
+}
+input, textarea {
+    background-color: rgba(0, 0, 0, 0.788);
+    width: 80%;
+    border: 2px solid rgb(158, 214, 132);
+    border-radius: 5px;
+    color: white;
+}
+button {
+    background-color: rgb(158, 214, 132);
+    width: 80%;
+    border: 2px solid rgb(158, 214, 132);
+    border-radius: 15px;
+    color: black; 
+    width: 100px;
+    margin-bottom: 20px;
+}
+button:hover {
+    cursor: pointer;
+    background-color: black;
+    border: 2px solid rgb(158, 214, 132);
+    color: white;
+}
+/*Ajustes de resposividade*/
+@media only screen and (max-width: 700px){
+    #logup {
+        width: 70%;
+        margin-left: 15%;
+    }
+}

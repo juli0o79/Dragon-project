@@ -1,0 +1,27 @@
+#menu {
+    height: 60px;
+    background-color: rgba(8, 8, 8, 0.534);
+    color: white;
+    margin-top: 0px;
+}
+ul {
+    margin: 0px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    padding-right: 10px;
+}
+li {
+    margin-left: 15px;
+}
+li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+li a:hover {
+    color: rgb(158, 214, 132);
+}

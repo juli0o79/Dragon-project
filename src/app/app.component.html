@@ -1,0 +1,18 @@
+<div id="menu">
+  <!--Informações da navbar para o usuário logado e não logado-->
+  <ul>
+    <li>
+      <a href="/login" *ngIf="value.logged == false" (click)="end()">Log out</a>
+    </li>
+    <li>
+      <a href="/list" *ngIf="value.logged == false">Lista</a>
+    </li>
+    <li>
+      <a href="/login" *ngIf="value.logged ==true">Login</a>
+    </li>
+    <li>
+      <a href="/signup" *ngIf="value.logged== true">Cadastro</a>
+    </li>
+  </ul>
+</div>
+  <router-outlet></router-outlet>

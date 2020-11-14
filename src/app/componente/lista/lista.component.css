@@ -1,0 +1,171 @@
+
+/*Código de estilo da lista e informações de edição*/
+#tableContainer {
+    background-color: rgba(0, 0, 0, 0.788);
+    width: 40%;
+    margin-left: 30%;
+    height: auto;
+    border-radius: 20px;
+    padding: 20px;
+    
+}
+
+.table{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   }
+#subtitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: white;
+    width: 79%;
+   }
+ h3{
+    width:33%;
+    text-align: center;
+    
+}    
+
+
+h1 {
+      color: white;
+      text-align: center;
+  } 
+span{
+      color: rgb(158, 214, 132);
+  }
+.tableChild {
+    border: 2px solid rgb(158, 214, 132);
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-bottom: 5px;
+    color: white;
+    width: 33%;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding: 5px;
+    transition: 0.4s;
+    justify-content: center;
+}
+.link{
+    width: 33%;
+    text-decoration: none;
+}
+.link .tableChild {
+    color: rgb(158, 214, 132);
+    width: 87%;
+    text-decoration: underline;
+}
+.link .tableChild:hover{
+    background-color: rgb(158, 214, 132);
+    font-size: 20px;
+}
+button {
+    background-color: rgb(158, 214, 132);
+    width: 80%;
+    border: 2px solid rgb(158, 214, 132);
+    border-radius: 15px;
+    color: black; 
+    width: 100px;
+    margin-left: 5px;
+    margin-bottom: 20px;
+    height: 30px;
+    margin-top: 17px;
+}
+button:hover {
+    cursor: pointer;
+    background-color: black;
+    border: 2px solid rgb(158, 214, 132);
+    color: white;
+}
+input{
+    width: 33% !important;
+    color: grey !important;
+}
+
+.red{
+    color: red;
+    font-size: 30px;
+}
+.hide{
+    display: none;
+}
+.hidden{
+    display: none;
+}
+.hiddenButton{
+    display:none;
+}
+.show{
+    display: inline-block;
+}
+#create{
+    margin-top: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+/*CSS Modal*/
+#modalContainer{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 5;
+    background-color: rgba(27, 27, 27, 0.575);
+}
+
+#modal {
+    z-index: 10;
+    position: fixed;
+    width: 60%;
+    height: 40%;
+    top: 30%;
+    left: 20%;
+    background-color: rgba(10, 10, 10, 0.89);
+    border: 2px solid rgb(158, 214, 132);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#delete{
+    margin-bottom: 0px;
+}
+/*Ajustes de resposividade*/
+@media only screen and (max-width: 700px){
+    
+
+#tableContainer{
+    width: 100%;
+    margin-left: 0;
+    padding: 5px;
+    margin-right: 5px;
+}
+.link{
+    width: 28%;
+    margin-right: 5px;
+}
+.tableChild{
+    width: 28%;
+    margin-left:0px;
+    margin-right: 5px;
+}
+.table button{
+    width: 60px !important;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+}
+    #modal{
+        width: 80%;
+        left: 10%;
+        
+    }
+}
